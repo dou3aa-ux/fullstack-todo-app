@@ -30,10 +30,6 @@ sqlCREATE DATABASE todo_db;
 3. Setup Backend
 bashcd todo-server
 npm install
-
-# Configure database in src/app.module.ts
-# Update: username, password, database name
-
 npm run start:dev
 Backend runs on http://localhost:5000
 4. Setup Frontend
@@ -43,30 +39,6 @@ npm run dev
 Frontend runs on http://localhost:5173
 open browser: Navigate to http://localhost:5173 and start managing your todos
 
-
-📁 Project Structure
-todo-app/
-├── todo-server/          # NestJS Backend
-│   └── src/
-│       ├── todos/
-│       │   ├── dto/
-│       │   ├── todo.entity.ts
-│       │   ├── todos.controller.ts
-│       │   ├── todos.service.ts
-│       │   └── todos.module.ts
-│       └── app.module.ts
-│
-└── todo-client/          # React Frontend
-    └── src/
-        ├── components/
-        │   ├── TodoForm.jsx
-        │   ├── TodoItem.jsx
-        │   └── TodoList.jsx
-        ├── hooks/
-        │   └── useTodos.js
-        ├── services/
-        │   └── api.js
-        └── App.jsx
 
 Key Features Explained
 Custom React Hook (useTodos)
